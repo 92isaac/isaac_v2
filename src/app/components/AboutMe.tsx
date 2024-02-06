@@ -3,8 +3,6 @@ import NavBar from "./NavBar";
 import Skills from "./Skills";
 
 const AboutMe = () => {
-  const { isDarkMode } = useContextGlobal();
-  console.log(isDarkMode)
 
   return (
     <main className="relative ml-0 lg:ml-[26%] lg:right-0 w-full lg:w-[74%] bg-eerie-black rounded-lg border md:border-0 border-jet border-solid shadow-sm md:shadow-none shadow-jet p-5 flex flex-col gap-10 mt-5 lg:mt-0 pb-10 lg:mb-0 mb-[4rem] overflow-hidden">
@@ -15,7 +13,7 @@ const AboutMe = () => {
       <section className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <h1
-            className="text-2xl md:text-[28px] font-bold text-litewhite"
+            className="text-2xl md:text-[28px] font-bold"
             data-aos="fade-down"
           >
             About Me
@@ -26,7 +24,7 @@ const AboutMe = () => {
           ></div>
         </div>
         <p
-          className="text-[14px] md:text-[16px] text-justify text-litewhite"
+          className="text-[14px] md:text-[16px] text-justify"
           data-aos="fade-down"
         >
           {" "}
@@ -42,6 +40,7 @@ const AboutMe = () => {
       </section>
 
       <Skills />
+
     </main>
   );
 };

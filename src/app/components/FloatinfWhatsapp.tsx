@@ -22,7 +22,7 @@ const FloatingWhatsApp: React.FC = () => {
     <>
       {display && (
         <div className="fixed bottom-28 md:bottom-14 md:right-12 z-10">
-          <FaTimes className="absolute -right-2 text-white -top-2" onClick={closeBtn} />
+          <FaTimes className="absolute -right-2 -top-2" onClick={closeBtn} />
           <button className="bg-[#4dc247] hover:bg-green-600 text-white rounded-full p-3 shadow-lg transition duration-1000" title="whatsapp">
             <a href="https://wa.me/2348068290320" target="_blank">
               <svg viewBox="0 0 32 32" className="w-6 h-6 fill-white shadow-md">

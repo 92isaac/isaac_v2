@@ -14,7 +14,7 @@ const MyJourney = () => {
       <section className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <h1
-            className="text-3xl font-bold text-litewhite"
+            className="text-3xl font-bold "
             data-aos="fade-down"
           >
             My Journey
@@ -25,27 +25,27 @@ const MyJourney = () => {
           ></div>
         </div>
         <div className="relative pl-8 pr-4 border-l-[2px] border-l-jet border-l-solid ml-5 md:ml-8 mt-10 mb-10 grid gap-6">
-          <h1 className="text-xl font-bold text-litewhite" data-aos="fade-down">
+          <h1 className="text-xl font-bold " data-aos="fade-down">
             Working Experience
           </h1>
           <FiBookOpen className="absolute top-[-15px] left-[-25px] p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-5xl" />
 
           <div className="relative grid gap-2">
             <h3
-              className="text-[16px] md:text-[18px] text-litewhite font-bold"
+              className="text-[16px] md:text-[18px]  font-bold"
               data-aos="fade-down"
             >
               Usaf
             </h3>
             <h4
-              className="text-[15px] md:text-[16px] text-litewhite font-italic"
+              className="text-[15px] md:text-[16px]  font-italic"
               data-aos="fade-down"
             >
               Frontend Engineer
             </h4>
 
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Collaborated with cross-functional partner teams to identify and
@@ -54,7 +54,7 @@ const MyJourney = () => {
             </h4>
 
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Participates in code review, fixes bugs, and troubleshoots web
@@ -63,7 +63,7 @@ const MyJourney = () => {
               builds confidence and trust in the development team
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Integrated backend APIs, which improve faster development
@@ -82,20 +82,20 @@ const MyJourney = () => {
           </div>
           <div className="relative grid gap-2">
             <h3
-              className="text-[16px] md:text-[18px] text-litewhite font-bold"
+              className="text-[16px] md:text-[18px]  font-bold"
               data-aos="fade-down"
             >
               Lasop
             </h3>
             <h4
-              className="text-[15px] md:text-[16px] text-litewhite font-italic"
+              className="text-[15px] md:text-[16px]  font-italic"
               data-aos="fade-down"
             >
               Fullstack Web Developer / Instructor
             </h4>
 
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Part of a team, worked on web revamp of{" "}
@@ -112,7 +112,7 @@ const MyJourney = () => {
             </h4>
 
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - With the solution, accessing course materials seamlessly and
@@ -120,7 +120,7 @@ const MyJourney = () => {
               experience. This increased mobile traffic by 30%
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Collaborate with cross-functional teams including designers,
@@ -129,7 +129,7 @@ const MyJourney = () => {
             </h4>
 
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Conducted practice tests to track progress, identify areas of
@@ -137,7 +137,7 @@ const MyJourney = () => {
               increases student success ratio
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Provided academic assistance to assigned students individually
@@ -154,19 +154,19 @@ const MyJourney = () => {
           </div>
           <div className="relative grid gap-2">
             <h3
-              className="text-[16px] md:text-[18px] text-litewhite font-bold"
+              className="text-[16px] md:text-[18px]  font-bold"
               data-aos="fade-down"
             >
               Freelance
             </h3>
             <h4
-              className="text-[15px] md:text-[16px] text-litewhite font-italic"
+              className="text-[15px] md:text-[16px]  font-italic"
               data-aos="fade-down"
             >
               Freelancer (Frontend Developer)
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Specialize in building highly interactive web applications that
@@ -175,7 +175,7 @@ const MyJourney = () => {
               animations that enhance user engagement
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Collaborate with cross-functional teams including designers,
@@ -183,7 +183,7 @@ const MyJourney = () => {
               developers to create high-quality products
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Stay up-to-date with the latest web development trends and
@@ -191,7 +191,7 @@ const MyJourney = () => {
               and innovative solutions
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Implemented responsive designs, cross-browser compatibility, and
@@ -199,7 +199,7 @@ const MyJourney = () => {
               traffic by 20%
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Implemented websites, mobile applications, and landing pages and
@@ -216,25 +216,25 @@ const MyJourney = () => {
           </div>
           <div className="relative grid gap-2">
             <h3
-              className="text-[16px] md:text-[18px] text-litewhite font-bold"
+              className="text-[16px] md:text-[18px]  font-bold"
               data-aos="fade-down"
             >
               Professional Development
             </h3>
             <h4
-              className="text-[15px] md:text-[16px] text-litewhite font-italic"
+              className="text-[15px] md:text-[16px]  font-italic"
               data-aos="fade-down"
             >
               Independent Learning | Self-taught
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Acquired proficiency in Python, JavaScript, and HTML/CSS through self-directed learning.
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite"
+              className="text-[14px] md:text-[16px] "
               data-aos="fade-down"
             >
               - Completed hands-on projects, including a web-based task management application using Django.
@@ -252,26 +252,26 @@ const MyJourney = () => {
         </div>
 
         <div className="relative pl-8 pr-4 border-l-[2px] border-l-jet border-l-solid ml-5 md:ml-8 mt-10 mb-10 grid gap-6">
-          <h1 className="text-xl font-bold text-litewhite" data-aos="fade-down">
+          <h1 className="text-xl font-bold " data-aos="fade-down">
             Education
           </h1>
           <FiBookOpen className="absolute top-[-15px] left-[-25px] p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-5xl" />
 
           <div className="relative grid gap-2">
             <h3
-              className="text-[16px] md:text-[18px] text-litewhite font-bold"
+              className="text-[16px] md:text-[18px]  font-bold"
               data-aos="fade-down"
             >
               Ladoke Akintola University of Technology, Nigeria
             </h3>
             <h4
-              className="text-[15px] md:text-[17px] text-litewhite"
+              className="text-[15px] md:text-[17px] "
               data-aos="fade-down"
             >
               Faculty of Environmental Sciences
             </h4>
             <h4
-              className="text-[14px] md:text-[16px] text-litewhite font-bold font-italic"
+              className="text-[14px] md:text-[16px]  font-bold font-italic"
               data-aos="fade-down"
             >
               Bachelor of Technology, Urban and Regional Planning

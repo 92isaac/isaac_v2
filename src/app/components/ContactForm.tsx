@@ -60,7 +60,7 @@ interface FormData {
     <section className="flex flex-col gap-5">
       <ToastContainer />
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl md:text-[28px] font-bold text-litewhite" data-aos="fade-down">
+        <h1 className="text-2xl md:text-[28px] font-bold" data-aos="fade-down">
           Contact Form
         </h1>
         <div className="bg-vegas-gold h-[5px] w-[60px] rounded-full" data-aos="fade-down"></div>

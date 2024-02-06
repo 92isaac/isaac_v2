@@ -1,40 +1,28 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useContextGlobal } from './Context';
 
 interface ToggleButtonProps {
   defaultMode?: 'light' | 'dark';
 }
 
-const ToggleButton: React.FC<ToggleButtonProps> = ({ defaultMode = 'light' }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultMode === 'dark');
-
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    localStorage.setItem('darkMode', newMode ? 'dark' : 'light');
-  };
-
-  useEffect(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedMode) {
-      setIsDarkMode(savedMode === 'dark');
-    } else {
-      setIsDarkMode(prefersDarkMode);
-    }
-  }, []);
+const ToggleButton: React.FC<ToggleButtonProps> = () => {
+  const { isDarkMode, toggleDarkMode } = useContextGlobal()
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className={`p-2 rounded ${
-        isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'
+    <div
+    className={`relative w-12 h-6 border rounded-full bg-gray-300 flex items-center cursor-pointer ${
+      isDarkMode ? "bg-smoky-black" : ""
+    }`}
+    onClick={toggleDarkMode}
+  >
+    <div
+      className={`absolute left-1 transition-transform duration-300 ease-in-out w-4 h-4 rounded-full  transform ${
+        isDarkMode ? "translate-x-6 bg-white" : "bg-black"
       }`}
-    >
-      {isDarkMode ? 'Dark Mode' : 'Light Mode'}
-    </button>
+    ></div>
+  </div>
   );
 };
 

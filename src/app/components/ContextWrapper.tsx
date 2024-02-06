@@ -1,5 +1,7 @@
-import React, { ReactNode } from 'react'
-import { useContextGlobal } from './Context';
+"use client"
+
+import React, { ReactNode, useContext } from 'react'
+import { AppProvider, useContextGlobal } from './Context';
 
 
 
@@ -8,18 +10,18 @@ interface ContextUseProps {
 }
 
 const ContextWrapper = ({children}: ContextUseProps) => {
-    // const { isDarkMode } = useContextGlobal();
-    const isDarkMode = true
+  const isDarkMode = useContextGlobal()?.isDarkMode;
+  console.log(isDarkMode)
   return (
+
     <main
     className={`${
       isDarkMode
-        ? "bg-smoky-black text-white"
-        : "bg-white text-smoky-black"
+      ? "bg-smoky-black text-white"
+      : "bg-white text-smoky-black"
     } w-full min-h-screen h-full p-[2%] gap-10`}
-  >
+    >
     {children}
-        
     </main>
   )
 }

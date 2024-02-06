@@ -26,7 +26,7 @@ const MyProjects = () => {
 
             <section className="flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
-                    <h1 className="text-3xl font-bold text-litewhite" data-aos="fade-down">Recent Projects</h1>
+                    <h1 className="text-3xl font-bold " data-aos="fade-down">Recent Projects</h1>
                     <div className="bg-vegas-gold h-[5px] w-[60px] rounded-full" data-aos="fade-down"></div>
                 </div>
             </section>
@@ -35,7 +35,7 @@ const MyProjects = () => {
                 {ProjectData.map((project, index) => (
                     <div
                         key={project.id}
-                        className="relative flex flex-col items-center justify-center p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid bg-smoky-black gap-3 pb-8 lg:pb-4"
+                        className="relative flex flex-col items-center justify-center p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid  gap-3 pb-8 lg:pb-4"
                         data-aos="fade-down"
                     >
                         <Image
@@ -47,8 +47,8 @@ const MyProjects = () => {
                             className="w-full"
                         />
                         <div className={`${isMenuOpen[index] ? 'flex' : 'hidden'} relative md:flex flex-col items-center justify-center text-center gap-2 mb-3 md:mb-0`}>
-                            <h1 className="text-lg md:text-xl text-litewhite font-bold">{project.projectTitle}</h1>
-                            <p className="text-[14px] md:text-[16px] text-litewhite text-center">{project.ProjectAbout}</p>
+                            <h1 className="text-lg md:text-xl  font-bold">{project.projectTitle}</h1>
+                            <p className="text-[14px] md:text-[16px]  text-center">{project.ProjectAbout}</p>
                             <h4 className="text-[15px] md:text-[17px] text-vegas-gold font-bold font-italic">
                                 {project.stack}
                             </h4>
@@ -79,7 +79,7 @@ const MyProjects = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-2">
-                <h4 className="text-[15px] md:text-[16px] text-litewhite font-bold font-italic text-center">More Projects!?</h4>
+                <h4 className="text-[15px] md:text-[16px]  font-bold font-italic text-center">More Projects!?</h4>
                 <a href="https://github.com/92isaac?tab=repositories" target="_blank" className="py-[8px] px-6 rounded-md text-smoky-black hover:text-vegas-gold bg-vegas-gold hover:bg-smoky-black hover:border-jet border border-solid text-[14px] md:text-[16px] font-bold transition-all delay-200 flex items-center justify-center">GitHub <BiLogoGithub className="ml-1 animate-bounce"/> </a>
             </div>
         </main>

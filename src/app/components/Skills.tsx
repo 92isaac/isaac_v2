@@ -102,7 +102,7 @@ const Skills = () => {
     <main className="grid gap-5">
       <div className="flex flex-col gap-2">
         <h1
-          className="text-2xl md:text-[28px] font-bold text-litewhite"
+          className="text-2xl md:text-[28px] font-bold"
           data-aos="fade-down"
         >
           Stack and Tools
@@ -122,7 +122,7 @@ const Skills = () => {
             data-aos="fade-down"
           >
             {item.icon}
-            <h1 className="text-litewhite text-sm md:text-lg font-bold">
+            <h1 className=" text-sm md:text-lg font-bold">
               {item.name}
             </h1>
           </div>

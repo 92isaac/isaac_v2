@@ -3,10 +3,8 @@
 import { useState, createContext, useContext, ReactNode, useEffect } from "react";
 
 interface GlobalData {
-  checked: boolean;
   isDarkMode: boolean;
   defaultMode?: 'light' | 'dark';
-  handleChange: (nextChecked: boolean) => void;
   toggleDarkMode: (nextChecked: boolean) => void;
 }
 
@@ -17,7 +15,6 @@ interface AppProviderProps {
 }
 
 export const AppProvider = ({ children }: AppProviderProps, { defaultMode = 'light' }) => {
-  const [checked, setChecked] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultMode === 'dark');
 
   const toggleDarkMode = () => {
@@ -39,15 +36,8 @@ export const AppProvider = ({ children }: AppProviderProps, { defaultMode = 'lig
 
 
 
-  const handleChange = () => {
-    setChecked(!checked);
-  };
-
-
   const globalData: GlobalData = {
-    checked,
     isDarkMode,
-    handleChange,
     toggleDarkMode,
   };
 

@@ -6,11 +6,11 @@ const Socials = () => {
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div
-        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid bg-smoky-black"
+        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid "
         data-aos="fade-down"
       >
         <div className="flex items-center justify-center gap-2 md:gap-4">
-          <HiOutlineMail className="p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-4xl" />
+          <HiOutlineMail className="p-2 rounded-xl text-vegas-gold  border border-jet border-solid text-4xl" />
           <p className="text-gray text-[15px] md:text-[16px] font-bold">
             Email
           </p>
@@ -20,21 +20,21 @@ const Socials = () => {
           target="_blank"
           className="flex flex-col items-center justify-center gap-2 group"
         >
-          <p className="text-litewhite text-[12px] md:text-[13px] font-medium">
+          <p className=" text-[12px] md:text-[13px] font-medium">
             sangodareisaac92@gmail.com
           </p>
-          <h4 className="text-[14px] md:text-[16px] text-litewhite group-hover:text-vegas-gold transition-all delay-200 font-medium">
+          <h4 className="text-[14px] md:text-[16px]  group-hover:text-vegas-gold transition-all delay-200 font-medium">
             Send A Mail
           </h4>
         </a>
       </div>
 
       <div
-        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid bg-smoky-black"
+        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid "
         data-aos="fade-down"
       >
         <div className="flex items-center justify-center gap-2 md:gap-4">
-          <FaWhatsapp className="p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-4xl" />
+          <FaWhatsapp className="p-2 rounded-xl text-vegas-gold  border border-jet border-solid text-4xl" />
           <p className="text-gray text-[15px] md:text-[16px] font-bold">
             WhatsApp
           </p>
@@ -53,17 +53,17 @@ const Socials = () => {
           </a>
         </button> */}
         <a href="https://wa.me/2348068290320" target="_blank" className="flex flex-col items-center justify-center gap-2 group">
-                        <p className="text-litewhite text-[12px] md:text-[13px] font-medium">+234-80-682-903-20</p>
-                        <h4 className="text-[14px] md:text-[16px] text-litewhite group-hover:text-vegas-gold transition-all delay-200 font-medium">Send A Message</h4>
+                        <p className=" text-[12px] md:text-[13px] font-medium">+234-80-682-903-20</p>
+                        <h4 className="text-[14px] md:text-[16px]  group-hover:text-vegas-gold transition-all delay-200 font-medium">Send A Message</h4>
                     </a>
       </div>
 
       <div
-        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid bg-smoky-black"
+        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid "
         data-aos="fade-down"
       >
         <div className="flex items-center justify-center gap-2 md:gap-4">
-          <FaPhoneVolume className="p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-4xl" />
+          <FaPhoneVolume className="p-2 rounded-xl text-vegas-gold  border border-jet border-solid text-4xl" />
           <p className="text-gray text-[15px] md:text-[16px] font-bold">
             Phone
           </p>
@@ -73,27 +73,27 @@ const Socials = () => {
           target="_blank"
           className="flex flex-col items-center justify-center gap-2 group"
         >
-          <p className="text-litewhite text-[12px] md:text-[13px] font-medium">
+          <p className=" text-[12px] md:text-[13px] font-medium">
           +234-80-682-903-20
           </p>
-          <h4 className="text-[14px] md:text-[16px] text-litewhite group-hover:text-vegas-gold transition-all delay-200 font-medium">
+          <h4 className="text-[14px] md:text-[16px]  group-hover:text-vegas-gold transition-all delay-200 font-medium">
             Place A Call
           </h4>
         </a>
       </div>
 
       <div
-        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid bg-smoky-black"
+        className="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm shadow-jet border border-jet border-solid "
         data-aos="fade-down"
       >
         <div className="flex items-center justify-center gap-2 md:gap-4">
-          <HiOutlineMapPin className="p-2 rounded-xl text-vegas-gold bg-smoky-black border border-jet border-solid text-4xl" />
+          <HiOutlineMapPin className="p-2 rounded-xl text-vegas-gold  border border-jet border-solid text-4xl" />
           <p className="text-gray text-[15px] md:text-[16px] font-bold">
             Location
           </p>
         </div>
 
-        <h4 className="text-[14px] md:text-[16px] text-litewhite transition-all delay-200 font-medium">
+        <h4 className="text-[14px] md:text-[16px]  transition-all delay-200 font-medium">
           Lagos State, Nigeria
         </h4>
       </div>
