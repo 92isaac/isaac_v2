@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { TbLoader3 } from "react-icons/tb";
 import { GrStatusGood } from "react-icons/gr";
+import { useContextGlobal } from './Context';
 
 interface FormData {
     fullName: string;
@@ -12,6 +13,7 @@ interface FormData {
   }
   
   const ContactForm: React.FC = () => {
+    const { isDarkMode } = useContextGlobal()
     const [formData, setFormData] = useState<FormData>({
       fullName: '',
       emailAddress: '',
@@ -39,14 +41,17 @@ interface FormData {
     })
   }
 
+  const subject = `Message from ${formData.fullName ? formData.fullName : "Anonymous"}, ${formData.emailAddress}`
+  const body = `${formData.message}`
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setIsLoading(true)
 
     setTimeout(() => {
-      console.log(formData)
-      toast.success("Message sent successfully!", {
+      // console.log(formData)
+      toast.success("Please wait while we prepare your message to be sent via your email", {
         progressStyle: { background: '#FFC254' },
         style: {color: '#121212' },
         icon: <GrStatusGood className="text-xl"/>   })
@@ -54,6 +59,15 @@ interface FormData {
       setIsLoading(false)
     }, 2000);
     // Handle form submission logic
+
+    setTimeout(()=>{
+      window.location.href = `mailto:sangodareisaac92@gmail.com?subject=${subject}&body=${body}`;
+      setFormData({
+        fullName: '',
+        emailAddress: '',
+        message: '',
+      });
+    }, 7000)
   };
 
   return (
@@ -96,7 +110,7 @@ interface FormData {
           cols={20}
           rows={10}
           placeholder="Your Message"
-          className="input shadow-sm shadow-jet"
+          className={`input shadow-sm shadow-jet ${isDarkMode ? "text-litewhite" : "text-smoky-black"}`}
           required
           data-aos="fade-down"
         />
