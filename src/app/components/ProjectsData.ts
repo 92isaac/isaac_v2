@@ -25,7 +25,7 @@ interface ProjectDataTypes {
         ProjectAbout: "Crafted during a hackathon, this project showcases a seamless fusion of front-end development and back-end integration, elevating user interface design to new heights. Leveraging a tech stack that includes React with TypeScript, Axios for API connectivity, Tailwind CSS for stylish and responsive layouts, and JavaScript IntersectionObserver for captivating animations, this endeavor represents a harmonious marriage of cutting-edge technologies.",
         stack: "React | Vite | Typescript | TailwindCSS | JavaScript IntersectionObserver | Axios",
         projectGithubURL: "https://github.com/92isaac",
-        projectLiveURL: "https://get-linked-weld.vercel.app/",
+        projectLiveURL: "https://getlinked-ai-hackathon-challenge.vercel.app/",
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ interface ProjectDataTypes {
         ProjectAbout: "This project revolves around creating a robust and secure online platform that enables seamless shopping experiences for customers. Leveraged React to build the interactive user interface of the e-commerce web application and Typescript for type check. Utilized Redux Toolkit for state management, ensuring a predictable and scalable data flow within the application. Employed Redux Toolkit Query for efficient data fetching and management, ensuring seamless integration with the backend APIs.",
         stack: "Redux toolkit | Typescript | TailwindCSS | RTK Query | React",
         projectGithubURL: "https://github.com/92isaac",
-        projectLiveURL: "https://iamnaeto.vercel.app/",
+        projectLiveURL: "https://tokosmile.vercel.app/",
     },
     {
         id: 4,
