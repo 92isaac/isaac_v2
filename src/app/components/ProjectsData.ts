@@ -43,7 +43,7 @@ interface ProjectDataTypes {
         projectTitle: "Tokosmile",
         ProjectAbout: "This project revolves around creating a robust and secure online platform that enables seamless shopping experiences for customers. Leveraged React to build the interactive user interface of the e-commerce web application and Typescript for type check. Utilized Redux Toolkit for state management, ensuring a predictable and scalable data flow within the application. Employed Redux Toolkit Query for efficient data fetching and management, ensuring seamless integration with the backend APIs.",
         stack: "Redux toolkit | Typescript | TailwindCSS | RTK Query | React",
-        projectGithubURL: "https://github.com/IamNaeto/portfolio_v2",
+        projectGithubURL: "https://github.com/92isaac",
         projectLiveURL: "https://iamnaeto.vercel.app/",
     },
     {
